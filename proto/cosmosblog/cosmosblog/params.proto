@@ -1,0 +1,12 @@
+syntax = "proto3";
+package preetjain.cosmosblog.cosmosblog;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/preet-jain/CosmosBlog/x/cosmosblog/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

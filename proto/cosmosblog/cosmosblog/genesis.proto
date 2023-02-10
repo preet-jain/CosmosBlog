@@ -1,0 +1,12 @@
+syntax = "proto3";
+package preetjain.cosmosblog.cosmosblog;
+
+import "gogoproto/gogo.proto";
+import "cosmosblog/cosmosblog/params.proto";
+
+option go_package = "github.com/preet-jain/CosmosBlog/x/cosmosblog/types";
+
+// GenesisState defines the cosmosblog module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
